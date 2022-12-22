@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./imagenes/fake.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/PaginaEstudioFake/estilos.css">
+    <link rel="stylesheet" href="/PaginaEstudioFake/Mediaquaries.css">
+    <link rel="stylesheet" href="/src/static/css/LoginEstilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3d5f69751.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body id="LoginB">
+    <header class="headerC">
+        <!--En JS-->
+
+    </header>
+
+    <main id="LoginM">
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="/login" method="post" class="formulario__login" >
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Usuario" name="Usuario">
+                    <input type="password" placeholder="Contraseña" name="Contraseña">
+                    <button>Entrar</button>
+                </form>
+
+                <!--Register-->
+                <form action="" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" class="form-control" name="txtNombre" id="txtNombre" placeholder="Nombre completo">
+                    <input type="text" class="form-control" name="txtCorreo" id="txtCorreo" placeholder="Correo Electronico">
+                    <input type="text" class="form-control" name="txtUsuario" id="txtUsuario" placeholder="Usuario">
+                    <input type="text" class="form-control" name="txtPassword" id="txtPassword" placeholder="Contraseña">
+                    <button type="button" class="botonesCrud btn btn-success" onclick="guardarU()">Regístrarse</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer id="FooterP">
+        <!-- EN el JS-->
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      <script src="/PaginaEstudioFake/jsF/Usuales.js"></script>
+      <script defer src="/PaginaEstudioFake/jsF/navegacion.js"></script>
+      <script src="/Frontend/js/USUARIOS/Registro.js"></script>
+      <script src="/Frontend/js/USUARIOS/createU.js"></script>
+
+</body>
+
+</html>
